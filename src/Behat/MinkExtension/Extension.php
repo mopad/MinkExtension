@@ -245,6 +245,10 @@ class Extension implements ExtensionInterface
                                 booleanNode('nativeEvents')->end()->
                                 booleanNode('ignoreZoomSetting')->end()->
                                 booleanNode('ignoreProtectedModeSettings')->end()->
+                                booleanNode('nativeEvents')->end()->
+                                scalarNode('elementScrollBehavior')->
+                                    defaultValue(isset($config['selenium2']['capabilities']['elementScrollBehavior']) ? $config['selenium2']['capabilities']['elementScrollBehavior'] : 0)->
+                                end()->
                                 arrayNode('proxy')->
                                     children()->
                                         scalarNode('proxyType')->end()->
