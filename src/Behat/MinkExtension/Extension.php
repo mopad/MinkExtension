@@ -243,6 +243,7 @@ class Extension implements ExtensionInterface
                                 booleanNode('rotatable')->end()->
                                 booleanNode('acceptSslCerts')->end()->
                                 booleanNode('nativeEvents')->end()->
+                                booleanNode('ignoreZoomSetting')->end()->
                                 arrayNode('proxy')->
                                     children()->
                                         scalarNode('proxyType')->end()->
