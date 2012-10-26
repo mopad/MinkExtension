@@ -244,6 +244,7 @@ class Extension implements ExtensionInterface
                                 booleanNode('acceptSslCerts')->end()->
                                 booleanNode('nativeEvents')->end()->
                                 booleanNode('ignoreZoomSetting')->end()->
+                                booleanNode('ignoreProtectedModeSettings')->end()->
                                 arrayNode('proxy')->
                                     children()->
                                         scalarNode('proxyType')->end()->
