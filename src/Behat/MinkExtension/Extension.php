@@ -249,6 +249,9 @@ class Extension implements ExtensionInterface
                                 scalarNode('elementScrollBehavior')->
                                     defaultValue(isset($config['selenium2']['capabilities']['elementScrollBehavior']) ? $config['selenium2']['capabilities']['elementScrollBehavior'] : 0)->
                                 end()->
+                                scalarNode('unexpectedAlertBehaviour')->
+                                    defaultValue(isset($config['selenium2']['capabilities']['unexpectedAlertBehaviour']) ? $config['selenium2']['capabilities']['unexpectedAlertBehaviour'] : 0)->
+                                end()->
                                 arrayNode('proxy')->
                                     children()->
                                         scalarNode('proxyType')->end()->
